@@ -140,7 +140,6 @@ CREATE TABLE laboratory."user" (
 CREATE TABLE laboratory.accountant (
 	acc_id int4 NOT NULL,
 	user_id int4 NOT NULL,
-	account_id int4 NOT NULL,
 	CONSTRAINT accountant_pk PRIMARY KEY (acc_id),
 	CONSTRAINT accountant_fk FOREIGN KEY (user_id) REFERENCES laboratory."user"(user_id)
 );
